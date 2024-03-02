@@ -1,0 +1,21 @@
+const mongoose = require('mongoose')
+const {Schema} = require('mongoose')
+const Product = Schema({
+    name:{
+        type:String
+    },
+    image:{
+        type:String
+    },
+    dis:{
+        type:String
+    },
+    images:{
+        type:String
+    },
+    amt:{
+        type:String
+    }
+})
+ 
+module.exports = mongoose.model('product',Product)
